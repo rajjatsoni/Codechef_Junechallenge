@@ -1,0 +1,19 @@
+T = int(input())
+ans = []
+for i in range(T):
+    t, k = list(map(int, input().split()))
+    X = list(map(int, input().split()))
+    N1 = sum(X)
+    Y = []
+    for j in range(len(X)):
+        if X[j] > k:
+            Y.append(k)
+        else:
+            Y.append(X[j])
+    N2 = sum(Y)
+    ans.append(N1 - N2)
+    
+    
+    
+for i in range(len(ans)):
+    print(ans[i])
