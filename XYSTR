@@ -1,0 +1,19 @@
+T = int(input())
+anss = []
+for i in range(T):
+    s = str(input())
+    ans = 0
+    j = 0
+    while True:
+        if j >= len(s) - 1:
+            break
+        if s[j + 1] != s[j]:
+            ans += 1
+            j += 1
+        
+        if j >= len(s) - 1:
+            break
+        j += 1
+    anss.append(ans)
+for i in range(len(anss)):
+    print(anss[i])
