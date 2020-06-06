@@ -1,0 +1,21 @@
+n = int(input())
+ans = []
+
+def fun1(TS):
+    return (TS - 1)//2
+for j in range(n):
+    TS = int(input())
+    while TS % 2 == 0:
+            TS = TS // 2 
+    if TS % 2 != 0 and TS != 1:
+        ans.append(fun1(TS))
+    elif TS == 1:
+        ans.append(0)
+        
+for i in range(len(ans)):
+    print(ans[i])
+    
+        
+        
+    
+        
